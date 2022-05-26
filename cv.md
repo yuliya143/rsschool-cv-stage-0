@@ -38,11 +38,11 @@ function intersection(arr1, arr2) {
 *2022 - present*  
 RS Schools Course «JavaScript/Front-end» (study)
 
-*2020 - 2023*  
-Maternity leave
-
 *2020 - 2022*  
 Freelance: create responsive, cross-browser layouts and visuals to improve user experience, restyling templates using CSS, JS when required, solving front end fixes end technical issues
+
+*2020 - 2023*  
+Maternity leave
 
 *2012 - 2023*  
 Ophthalmologist in city clinical hospital
@@ -55,17 +55,17 @@ Ophthalmologist in city clinical hospital
 
 ### Study projects:
 
-**Project "Mesto":**  
+**Project «Mesto»:**  
 Functionality: Development of an application interface in which users share photos, work with a user profile, pop-ups.  
-Technologies: JavaScript, HTML, CSS, Webpack.  
+Technologies: HTML, CSS, JavaScript, Webpack.  
 Project [link](https://yuliya143.github.io/mesto-project/).
 
-**"Bicycle-travel" project:**  
+**Project «Bicycle-travel»:**  
 Functionality: Development of the site interface for cyclists. Responsive layout, slider, theme switching.  
-Technologies: HTML, CSSS/SCSS, JavaScript.  
+Technologies: HTML, CSS/SCSS, JavaScript.  
 Project [link](https://yuliya143.github.io/bicycle-travel/).
 
-**Project "Festival Lyubimovka":**  
+**Project «Festival Lyubimovka»:**  
 Functionality: Development of the interface of one of the pages of the site for the festival of young dramaturgy. Responsive layout, slider.  
 Technologies: HTML, CSS, JavaScript.  
 Project [link](https://yuliya143.github.io/lubimovka/).
@@ -74,6 +74,6 @@ Project [link](https://yuliya143.github.io/lubimovka/).
 *2006-2012* - Belarusian State Medical University  
 *2016-2019* - Belarusian Medical Academy of Postgraduate Education
 ## Languages
-Russian - Native  
-English - Intermediate  
-Polish - Basic  
+**Russian** - Native  
+**English**- Intermediate  
+**Polish** - Basic  
