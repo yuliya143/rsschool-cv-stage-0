@@ -7,7 +7,7 @@
 - **Telegram**: @yulia134
 - **Discord**: Yuliya Zabalotnaya (@yuliya143)
 - **[Github](https://github.com/yuliya143)**
-- Belarus, Minsk
+- **Location**: Belarus, Minsk
 
 ## About me
 I want to become a proficient Frontend Developer. I am an excellent team worker with the best manner, positive attitude and always striving for improvement.
@@ -48,8 +48,8 @@ Maternity leave
 Ophthalmologist in city clinical hospital
 
 ### Courses:
-- HTML5 and CSS3 Web Development(completed)
-- Yandex.Practicum Web Developer(incompleted)
+- HTML5 and CSS3 Web Development (completed)
+- Yandex.Practicum Web Developer (incompleted)
 - JavaScript manual on learnjavascript.ru (in progress)
 - JS, CSS, HTML, Git video courses on YouTube channels
 
@@ -75,5 +75,5 @@ Project [link](https://yuliya143.github.io/lubimovka/).
 *2016-2019* - Belarusian Medical Academy of Postgraduate Education
 ## Languages
 **Russian** - Native  
-**English**- Intermediate  
+**English** - Intermediate  
 **Polish** - Basic  
