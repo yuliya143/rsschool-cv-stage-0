@@ -1,0 +1,35 @@
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin only-desktop {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}

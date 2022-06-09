@@ -1,0 +1,45 @@
+.contacts {
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: var(--primary-color);
+  }
+
+  &__link {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--primary-font-family);
+    line-height: 1.6;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    @include tablet-landscape {
+      font-size: 20px;
+    }
+
+    @include only-desktop {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+
+    @include tablet-landscape {
+      font-size: 20px;
+    }
+  }
+}

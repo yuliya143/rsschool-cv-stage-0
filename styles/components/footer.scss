@@ -1,0 +1,20 @@
+.footer {
+  background-color: rgb(66 127 233 / 60%);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 120px;
+    height: 60px;
+  }
+}

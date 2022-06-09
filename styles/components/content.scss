@@ -1,0 +1,9 @@
+.content {
+  margin-top: var(--header-height);
+
+  @include tablet-landscape {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 24px 16px;
+  }
+}

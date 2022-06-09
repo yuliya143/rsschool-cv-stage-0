@@ -1,15 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV RSSchool</title>
-    <link rel="icon" href="#">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuliya Zabolotnaya CV</title>
+    <link rel="icon" href="./assets/images/favicon-icon.ico" />
+    <script type="module" src="./scripts/index.js"></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__menu navigation">
+          <a href="#about" class="navigation__link">About me</a>
+          <a href="#contacts" class="navigation__link">Contacts</a>
+          <a href="#skills" class="navigation__link">Skills</a>
+          <a href="#languages" class="navigation__link">Languages</a>
+          <a href="#courses" class="navigation__link">Courses</a>
+          <a href="#experince" class="navigation__link">Experience</a>
+          <a href="#code" class="navigation__link">Code</a>
+          <a href="#projects" class="navigation__link">Projects</a>
+          <a href="#education" class="navigation__link">Education</a>
+        </nav>
+        <button type="button" class="menu-button">
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+
+      <!-- <div class="theme-toggle">
+        <svg
+          viewBox="0 0 28 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="theme-toggle__icon theme-toggle__icon_type_sun"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M14 0C14.3713 0 14.7274 0.147499 14.99 0.41005C15.2525 0.672601 15.4 1.0287 15.4 1.4V2.8C15.4 3.1713 15.2525 3.5274 14.99 3.78995C14.7274 4.0525 14.3713 4.2 14 4.2C13.6287 4.2 13.2726 4.0525 13.0101 3.78995C12.7475 3.5274 12.6 3.1713 12.6 2.8V1.4C12.6 1.21615 12.6362 1.0341 12.7066 0.864243C12.7769 0.694387 12.88 0.540052 13.0101 0.41005C13.1401 0.280048 13.2944 0.176925 13.4642 0.106569C13.6341 0.036212 13.8161 0 14 0ZM4.1 4.1C4.23 3.96998 4.38435 3.86685 4.55421 3.79648C4.72408 3.72612 4.90614 3.6899 5.09 3.6899C5.27386 3.6899 5.45592 3.72612 5.62579 3.79648C5.79565 3.86685 5.95 3.96998 6.08 4.1L7.07 5.09C7.20001 5.22001 7.30314 5.37435 7.3735 5.54422C7.44386 5.71408 7.48007 5.89614 7.48007 6.08C7.48007 6.26386 7.44386 6.44592 7.3735 6.61578C7.30314 6.78565 7.20001 6.93999 7.07 7.07C6.93999 7.20001 6.78565 7.30314 6.61578 7.3735C6.44592 7.44386 6.26386 7.48007 6.08 7.48007C5.89614 7.48007 5.71408 7.44386 5.54422 7.3735C5.37435 7.30314 5.22001 7.20001 5.09 7.07L4.1 6.08C3.96998 5.95 3.86685 5.79565 3.79648 5.62579C3.72612 5.45592 3.6899 5.27386 3.6899 5.09C3.6899 4.90614 3.72612 4.72408 3.79648 4.55421C3.86685 4.38435 3.96998 4.23 4.1 4.1ZM23.9 4.1C24.03 4.23 24.1332 4.38435 24.2035 4.55421C24.2739 4.72408 24.3101 4.90614 24.3101 5.09C24.3101 5.27386 24.2739 5.45592 24.2035 5.62579C24.1332 5.79565 24.03 5.95 23.9 6.08L22.91 7.07C22.6474 7.33256 22.2913 7.48007 21.92 7.48007C21.5487 7.48007 21.1926 7.33256 20.93 7.07C20.6674 6.80744 20.5199 6.45132 20.5199 6.08C20.5199 5.70868 20.6674 5.35256 20.93 5.09L21.92 4.1C22.05 3.96998 22.2043 3.86685 22.3742 3.79648C22.5441 3.72612 22.7261 3.6899 22.91 3.6899C23.0939 3.6899 23.2759 3.72612 23.4458 3.79648C23.6157 3.86685 23.77 3.96998 23.9 4.1ZM7 14C7 12.1435 7.7375 10.363 9.05025 9.05025C10.363 7.7375 12.1435 7 14 7C15.8565 7 17.637 7.7375 18.9497 9.05025C20.2625 10.363 21 12.1435 21 14C21 15.8565 20.2625 17.637 18.9497 18.9497C17.637 20.2625 15.8565 21 14 21C12.1435 21 10.363 20.2625 9.05025 18.9497C7.7375 17.637 7 15.8565 7 14ZM0 14C0 13.6287 0.147499 13.2726 0.41005 13.0101C0.672601 12.7475 1.0287 12.6 1.4 12.6H2.8C2.98385 12.6 3.1659 12.6362 3.33576 12.7066C3.50561 12.7769 3.65995 12.88 3.78995 13.0101C3.91995 13.1401 4.02308 13.2944 4.09343 13.4642C4.16379 13.6341 4.2 13.8161 4.2 14C4.2 14.1839 4.16379 14.3659 4.09343 14.5358C4.02308 14.7056 3.91995 14.8599 3.78995 14.99C3.65995 15.12 3.50561 15.2231 3.33576 15.2934C3.1659 15.3638 2.98385 15.4 2.8 15.4H1.4C1.0287 15.4 0.672601 15.2525 0.41005 14.99C0.147499 14.7274 0 14.3713 0 14ZM23.8 14C23.8 13.6287 23.9475 13.2726 24.2101 13.0101C24.4726 12.7475 24.8287 12.6 25.2 12.6H26.6C26.7839 12.6 26.9659 12.6362 27.1358 12.7066C27.3056 12.7769 27.4599 12.88 27.5899 13.0101C27.72 13.1401 27.8231 13.2944 27.8934 13.4642C27.9638 13.6341 28 13.8161 28 14C28 14.1839 27.9638 14.3659 27.8934 14.5358C27.8231 14.7056 27.72 14.8599 27.5899 14.99C27.4599 15.12 27.3056 15.2231 27.1358 15.2934C26.9659 15.3638 26.7839 15.4 26.6 15.4H25.2C24.8287 15.4 24.4726 15.2525 24.2101 14.99C23.9475 14.7274 23.8 14.3713 23.8 14ZM20.93 20.93C21.06 20.8 21.2143 20.6968 21.3842 20.6265C21.5541 20.5561 21.7361 20.5199 21.92 20.5199C22.1039 20.5199 22.2859 20.5561 22.4558 20.6265C22.6257 20.6968 22.78 20.8 22.91 20.93L23.9 21.92C24.03 22.05 24.1331 22.2044 24.2035 22.3742C24.2739 22.5441 24.3101 22.7261 24.3101 22.91C24.3101 23.0939 24.2739 23.2759 24.2035 23.4458C24.1331 23.6156 24.03 23.77 23.9 23.9C23.77 24.03 23.6156 24.1331 23.4458 24.2035C23.2759 24.2739 23.0939 24.3101 22.91 24.3101C22.7261 24.3101 22.5441 24.2739 22.3742 24.2035C22.2044 24.1331 22.05 24.03 21.92 23.9L20.93 22.91C20.8 22.78 20.6968 22.6257 20.6265 22.4558C20.5561 22.2859 20.5199 22.1039 20.5199 21.92C20.5199 21.7361 20.5561 21.5541 20.6265 21.3842C20.6968 21.2143 20.8 21.06 20.93 20.93ZM5.09 20.93C5.35256 20.6674 5.70868 20.5199 6.08 20.5199C6.45132 20.5199 6.80744 20.6674 7.07 20.93C7.33256 21.1926 7.48007 21.5487 7.48007 21.92C7.48007 22.2913 7.33256 22.6474 7.07 22.91L6.08 23.9C5.94999 24.03 5.79565 24.1331 5.62578 24.2035C5.45592 24.2739 5.27386 24.3101 5.09 24.3101C4.90614 24.3101 4.72408 24.2739 4.55422 24.2035C4.38435 24.1331 4.23001 24.03 4.1 23.9C3.96999 23.77 3.86686 23.6156 3.7965 23.4458C3.72614 23.2759 3.68993 23.0939 3.68993 22.91C3.68993 22.7261 3.72614 22.5441 3.7965 22.3742C3.86686 22.2044 3.96999 22.05 4.1 21.92L5.09 20.93ZM14 23.8C14.3713 23.8 14.7274 23.9475 14.99 24.2101C15.2525 24.4726 15.4 24.8287 15.4 25.2V26.6C15.4 26.9713 15.2525 27.3274 14.99 27.5899C14.7274 27.8525 14.3713 28 14 28C13.6287 28 13.2726 27.8525 13.0101 27.5899C12.7475 27.3274 12.6 26.9713 12.6 26.6V25.2C12.6 24.8287 12.7475 24.4726 13.0101 24.2101C13.2726 23.9475 13.6287 23.8 14 23.8Z"
+            fill="#CFCFCF"
+          />
+        </svg>
+
+        <div class="theme-toggle__button-container">
+          <input type="checkbox" class="theme-toggle__button" />
+        </div>
+
+        <svg
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="theme-toggle__icon theme-toggle__icon_type_moon"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M7.353 0.938854C7.49145 1.07752 7.58611 1.2538 7.62522 1.44581C7.66433 1.63781 7.64618 1.83708 7.573 2.01885C6.98754 3.4739 6.8427 5.06895 7.15649 6.60565C7.47028 8.14236 8.22885 9.55293 9.33789 10.662C10.4469 11.771 11.8575 12.5296 13.3942 12.8434C14.9309 13.1572 16.526 13.0123 17.981 12.4269C18.1628 12.3538 18.362 12.3358 18.5539 12.375C18.7459 12.4142 18.9221 12.5089 19.0606 12.6474C19.1992 12.7859 19.2941 12.962 19.3334 13.1539C19.3728 13.3458 19.3549 13.545 19.282 13.7269C18.5375 15.5794 17.2557 17.1667 15.6016 18.2847C13.9474 19.4026 11.9965 19.9999 10 19.9999C4.477 19.9999 0 15.5229 0 9.99985C0 5.79285 2.598 2.19485 6.273 0.717854C6.45477 0.644679 6.65404 0.626519 6.84605 0.665632C7.03805 0.704744 7.21434 0.799404 7.353 0.937854V0.938854Z"
+            fill="#CFCFCF"
+          />
+        </svg>
+      </div> -->
+    </header>
+
+    <main class="content">
+      <section class="promo">
+        <div class="promo__container container">
+          <img src="./assets/images/profile-photo.jpg" alt="Profile photo" class="promo__photo" />
+          <div class="promo__info">
+            <h1 class="promo__title section-title">Yuliya Zabolotnaya</h1>
+            <p class="promo__text text">Future Junior Frontend Developer</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="contacts__container container">
+          <h2 class="contacts__title section-title">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="contacts__icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="none" height="256" width="256" />
+                <path
+                  d="M222,158.4l-46.9-20a15.6,15.6,0,0,0-15.1,1.3l-25.1,16.7a76.5,76.5,0,0,1-35.2-35h0L116.3,96a15.9,15.9,0,0,0,1.4-15.1L97.6,34a16.3,16.3,0,0,0-16.7-9.6A56.2,56.2,0,0,0,32,80c0,79.4,64.6,144,144,144a56.2,56.2,0,0,0,55.6-48.9A16.3,16.3,0,0,0,222,158.4Z"
+                />
+                <path
+                  d="M157.4,47.7a72.6,72.6,0,0,1,50.9,50.9,8,8,0,0,0,7.7,6,7.6,7.6,0,0,0,2.1-.3,7.9,7.9,0,0,0,5.6-9.8,88,88,0,0,0-62.2-62.2,8,8,0,1,0-4.1,15.4Z"
+                />
+                <path
+                  d="M149.1,78.6a40.4,40.4,0,0,1,28.3,28.3,7.9,7.9,0,0,0,7.7,6,6.4,6.4,0,0,0,2-.3,7.9,7.9,0,0,0,5.7-9.8,55.8,55.8,0,0,0-39.6-39.6,8,8,0,1,0-4.1,15.4Z"
+                />
+              </svg>
+              <a href="tel:+375297042204" class="contacts__link"> +375 29 7042204 </a>
+            </li>
+
+            <li class="contacts__item">
+              <svg
+                class="contacts__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                viewBox="0 0 64 64"
+              >
+                <g id="Glyph_copy_2">
+                  <path
+                    d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z"
+                  />
+                  <path
+                    d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z"
+                  />
+                </g>
+              </svg>
+              <a href="mailto:yuv.zabolotnaya@gmail.com" class="contacts__link">
+                yuv.zabolotnaya@gmail.com
+              </a>
+            </li>
+
+            <li class="contacts__item">
+              <svg class="contacts__icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                />
+              </svg>
+              <a href="https://t.me/yuliya134" target="_blank" class="contacts__link">
+                t.me/yuliya134
+              </a>
+            </li>
+
+            <li class="contacts__item">
+              <svg class="contacts__icon" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                />
+              </svg>
+              <a
+                href="https://discord.com/channels/@me/909766419745480704"
+                target="_blank"
+                class="contacts__link"
+              >
+                Yuliya Zabalotnaya (@yuliya143)
+              </a>
+            </li>
+
+            <li class="contacts__item">
+              <svg
+                class="contacts__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                viewBox="0 0 438.549 438.549"
+              >
+                <g>
+                  <path
+                    d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365   c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63   c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996   c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136   c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559   c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559   c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997   c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851   c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136   c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41   c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126   c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817   c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994   c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849   c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24   c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979   c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146   c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995   c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906   C438.536,184.851,428.728,148.168,409.132,114.573z"
+                  />
+                </g>
+              </svg>
+              <a href="https://github.com/yuliya143" target="_blank" class="contacts__link">
+                github.com/yuliya143
+              </a>
+            </li>
+
+            <li class="contacts__item">
+              <svg
+                class="contacts__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                viewBox="0 0 485.213 485.212"
+              >
+                <g>
+                  <path
+                    d="M242.606,0C142.124,0,60.651,81.473,60.651,181.955s151.631,303.257,181.956,303.257   c30.326,0,181.955-202.775,181.955-303.257S343.089,0,242.606,0z M242.606,303.257c-66.9,0-121.302-54.433-121.302-121.302   S175.706,60.651,242.606,60.651c66.902,0,121.302,54.435,121.302,121.304S309.509,303.257,242.606,303.257z"
+                  />
+                </g>
+              </svg>
+              <p class="contacts__text text">Belarus, Minsk</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about__container container">
+          <h2 class="about__title section-title">About me</h2>
+          <p class="about__text text">
+            I want to become a proficient Frontend Developer. I am an excellent team worker with the
+            best manner, positive attitude and always striving for improvement.
+          </p>
+          <p class="about__text text">
+            I'm interested in Web Development because this occupation provides endless possibilities
+            for professional growth. I dedicate to learning additional technologies and coding
+            languages. I'm highly motivated individual who strives to write clear, concise, robust
+            code.
+          </p>
+          <p class="about__text text">
+            I believe, soon I'll be able to gain enough knowladge and skills to become a part of a
+            close-knit, hard-working team.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="skills__container container">
+          <h2 class="skills__title section-title">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <p class="skills__text text">HTML5, CSS3 (SCSS/SASS, BEM methodology)</p>
+            </li>
+            <li class="skills__item">
+              <p class="skills__text text">JavaScript Basics</p>
+            </li>
+            <li class="skills__item">
+              <p class="skills__text text">Version control: Git (remote service GitHub)</p>
+            </li>
+            <li class="skills__item">
+              <p class="skills__text text">VS Code, Figma</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experince" class="experince">
+        <div class="experince__container container">
+          <h2 class="experince__title section-title">Experience</h2>
+          <ul class="langueges__list">
+            <li class="langueges__item">
+              <p class="langueges__text text">2022 &#8212; present</p>
+              <p class="langueges__text text">RS Schools Course «JavaScript/Front-end» (study)</p>
+            </li>
+            <li class="langueges__item">
+              <p class="langueges__text text">2020 &#8212; 2022</p>
+              <p class="langueges__text text">
+                Freelance: create responsive, cross-browser layouts and visuals to improve user
+                experience, restyling templates using CSS, JS when required, solving front end fixes
+                end technical issues
+              </p>
+            </li>
+            <li class="langueges__item">
+              <p class="langueges__text text">2020 &#8212; 2023</p>
+              <p class="langueges__text text">Maternity leave</p>
+            </li>
+            <li class="langueges__item">
+              <p class="langueges__text text">2012 &#8212; 2023</p>
+              <p class="langueges__text text">Ophthalmologist in city clinical hospital</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="langueges" class="languages">
+        <div class="languages__container container">
+          <h2 class="languages__title section-title">Languages</h2>
+          <ul class="langueges__list">
+            <li class="langueges__item">
+              <p class="langueges__text text">Russian</p>
+              <p class="langueges__text text">Native</p>
+            </li>
+            <li class="langueges__item">
+              <p class="langueges__text text">English</p>
+              <p class="langueges__text text">Intermediate</p>
+            </li>
+            <li class="langueges__item">
+              <p class="langueges__text text">Polish</p>
+              <p class="langueges__text text">Basic</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section id="courses" class="courses">
+        <div class="courses__container container">
+          <h2 class="courses__title section-title">Courses</h2>
+          <ul class="courses__list">
+            <li class="courses__item">
+              <p class="courses__text text">HTML5 and CSS3 Web Development (completed)</p>
+            </li>
+            <li class="courses__item">
+              <p class="courses__text text">Yandex.Practicum Web Developer (incompleted)</p>
+            </li>
+            <li class="courses__item">
+              <p class="courses__text text">
+                JavaScript manual on learnjavascript.ru (in progress)
+              </p>
+            </li>
+            <li class="courses__item">
+              <p class="courses__text text">JS, CSS, HTML, Git video courses on YouTube channels</p>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <section id="education" class="education">
+        <div class="education__container container">
+          <h2 class="education__title section-title">Education and courses</h2>
+
+          <ul class="education__list">
+            <li class="education__item">
+              <p class="education__text text">HTML5 and CSS3 Web Development (completed)</p>
+            </li>
+            <li class="education__item">
+              <p class="education__text text">Yandex.Practicum Web Developer (incompleted)</p>
+            </li>
+            <li class="education__item">
+              <p class="education__text text">
+                JavaScript manual on learnjavascript.ru (in progress)
+              </p>
+            </li>
+            <li class="education__item">
+              <p class="education__text text">
+                JS, CSS, HTML, Git video courses on YouTube channels
+              </p>
+            </li>
+          </ul>
+
+          <ul class="education__list">
+            <li class="education__item">
+              <p class="education__text text">2006 &#8212; 2012</p>
+              <p class="education__text text">Belarusian State Medical University</p>
+            </li>
+            <li class="education__item">
+              <p class="education__text text">2016 &#8212; 2019</p>
+              <p class="education__text text">
+                Belarusian Medical Academy of Postgraduate Education
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="code" class="code">
+        <div class="code__container container">
+          <h2 class="code__title section-title">Code example</h2>
+          <pre class="code__content">
+              <code class="code__code">
+                function intersection(arr1, arr2) {
+                  return arr2.reduce((accum, num) => {
+                    if (arr1.includes(num) && !accum.includes(num)) {
+                      accum.push(num);
+                    }
+                    return accum;
+                  }, []);
+                }
+              </code>
+            </pre>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="projects__container container">
+          <h2 class="projects__title section-title">Study projects</h2>
+
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a
+                href="https://yuliya143.github.io/mesto-project/"
+                target="_blank"
+                class="projects__link"
+              >
+                <h3 class="projects__subtitle section-title">&#171;Mesto&#187;</h3>
+                <div class="projects__info">
+                  <p class="projects__text text">
+                    Functionality: Development of an application interface in which users share
+                    photos, work with a user profile, pop-ups.
+                  </p>
+                  <p class="projects__text text">Technologies: HTML, CSS, JavaScript, Webpack.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a
+                href="https://yuliya143.github.io/bicycle-travel/"
+                target="_blank"
+                class="projects__link"
+              >
+                <h3 class="projects__subtitle section-title">&#171;Bicycle-travel&#187;</h3>
+                <div class="projects__info">
+                  <p class="projects__text text">
+                    Functionality: Development of the site interface for cyclists. Responsive
+                    layout, slider, theme switching.
+                  </p>
+                  <p class="projects__text text">Technologies: HTML, CSS/SCSS, JavaScript.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects__item">
+              <a
+                href="https://yuliya143.github.io/lubimovka//"
+                target="_blank"
+                class="projects__link"
+              >
+                <h3 class="projects__subtitle section-title">&#171;Festival Lyubimovka&#187;</h3>
+                <div class="projects__info">
+                  <p class="projects__text text">
+                    Functionality: Development of the interface of one of the pages of the site for
+                    the festival of young dramaturgy. Responsive layout, slider.
+                  </p>
+                  <p class="projects__text text">Technologies: HTML, CSS, JavaScript.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">&copy; 2022 Yuliya Zabolotnaya</p>
+        <ul class="footer__social-links">
+          <li class="footer__link-item">
+            <a href="https://github.com/yuliya143" target="_blank" class="footer__media-link">
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                viewBox="0 0 438.549 438.549"
+              >
+                <g>
+                  <path
+                    d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365   c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63   c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996   c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136   c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559   c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559   c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997   c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851   c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136   c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41   c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126   c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817   c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994   c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849   c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24   c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979   c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146   c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995   c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906   C438.536,184.851,428.728,148.168,409.132,114.573z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__link-item">
+            <a href="https://rs.school/js/" class="footer__media-link">
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 552.8 205.3"
+              >
+                <style>
+                  .st0 {
+                    fill: #fff;
+                  }
+                  .st1 {
+                    clip-path: url(#SVGID_2_);
+                  }
+                  .st2 {
+                    clip-path: url(#SVGID_4_);
+                  }
+                  .st3 {
+                    clip-path: url(#SVGID_6_);
+                  }
+                  .st4 {
+                    clip-path: url(#SVGID_8_);
+                  }
+                  .st5 {
+                    fill: #fff;
+                    stroke: #000;
+                    stroke-width: 4;
+                    stroke-miterlimit: 10;
+                  }
+                  .st6 {
+                    clip-path: url(#SVGID_8_);
+                  }
+                  .st6,
+                  .st7 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-width: 4;
+                    stroke-miterlimit: 10;
+                  }
+                  .st8,
+                  .st9 {
+                    clip-path: url(#SVGID_10_);
+                  }
+                  .st9 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-width: 4;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <title>rs_school_js</title>
+                <path
+                  d="M285.4 68l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.9 3.6 6.9 5.4 12.2 5.4 3.9 0 7-.9 9.1-2.8 2-1.5 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.1-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4 6 4.2 9.6 11 10.7 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8s-5.3-2.8-9.2-2.8c-3.2 0-5.6.7-7.2 2-1.5 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.5 13.3 0 5.6-1.6 11.2-4.8 15.9-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8S286.1 77 285.4 68zM6.3 97.6V8.2h46.1c8.5 0 15.1.7 19.6 2.2 4.4 1.4 8.3 4.3 10.9 8.2 2.9 4.3 4.3 9.3 4.2 14.5.3 8.8-4.2 17.2-11.9 21.6-3 1.7-6.3 2.9-9.7 3.5 2.5.7 5 1.9 7.2 3.3 1.7 1.4 3.1 3 4.4 4.7 1.5 1.7 2.8 3.6 3.9 5.6l13.4 25.9H63L48.2 70.2c-1.9-3.5-3.5-5.8-5-6.9-2-1.4-4.4-2.1-6.8-2.1H34v36.3H6.3zM34 44.4h11.7c2.5-.2 4.9-.6 7.3-1.2 1.8-.3 3.4-1.3 4.5-2.8 2.7-3.6 2.3-8.7-1-11.8-1.8-1.5-5.3-2.3-10.3-2.3H34v18.1zM0 174.2l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.8 3.6 6.9 5.5 12.2 5.5 3.9 0 7-.9 9.1-2.8 2-1.6 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.2-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4s9.5 11 10.6 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8-2.2-1.9-5.3-2.8-9.2-2.7-3.2 0-5.6.7-7.2 2.1-1.6 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.6 13.2 0 5.6-1.7 11.1-4.8 15.8-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8-5.9-6-9.2-13.4-10-22.4z"
+                />
+                <path
+                  d="M133 167.2l24.2 7.3c-1.3 6.1-4 11.9-7.7 17-3.4 4.5-7.9 8-13 10.3-5.2 2.3-11.8 3.5-19.8 3.5-9.7 0-17.7-1.4-23.8-4.2-6.2-2.8-11.5-7.8-16-14.9-4.5-7.1-6.7-16.2-6.7-27.3 0-14.8 3.9-26.2 11.8-34.1s19-11.9 33.4-11.9c11.3 0 20.1 2.3 26.6 6.8 6.4 4.6 11.2 11.6 14.4 21l-24.4 5.4c-.6-2.1-1.5-4.2-2.7-6-1.5-2.1-3.4-3.7-5.7-4.9-2.3-1.2-4.9-1.7-7.5-1.7-6.3 0-11.1 2.5-14.4 7.6-2.5 3.7-3.8 9.6-3.8 17.6 0 9.9 1.5 16.7 4.5 20.4 3 3.7 7.2 5.5 12.7 5.5 5.3 0 9.3-1.5 12-4.4 2.7-3.1 4.7-7.4 5.9-13zm56.5-52.8h27.6v31.3h30.2v-31.3h27.8v89.4h-27.8v-36.2h-30.2v36.2h-27.6v-89.4z"
+                />
+                <path
+                  d="M271.3 159.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.3 4 34.4 12S364 144 364 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8s4.9-10.8 4.9-20.8c0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5zm93.4-.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.4 4 34.4 12S485 144 485 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8 3.3-3.9 4.9-10.8 4.9-20.8 0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10.1 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5z"
+                />
+                <path d="M482.1 114.4h27.6v67.4h43.1v22H482v-89.4z" />
+                <ellipse
+                  transform="rotate(-37.001 420.46 67.88)"
+                  class="st0"
+                  cx="420.5"
+                  cy="67.9"
+                  rx="63"
+                  ry="51.8"
+                />
+                <defs>
+                  <ellipse
+                    id="SVGID_1_"
+                    transform="rotate(-37.001 420.46 67.88)"
+                    cx="420.5"
+                    cy="67.9"
+                    rx="63"
+                    ry="51.8"
+                  />
+                </defs>
+                <clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" overflow="visible" /></clipPath>
+                <g class="st1">
+                  <path
+                    transform="rotate(-37.001 420.82 68.353)"
+                    class="st0"
+                    d="M330.9-14.2h179.8v165.1H330.9z"
+                  />
+                  <g id="Layer_2_1_">
+                    <defs>
+                      <path
+                        id="SVGID_3_"
+                        transform="rotate(-37.001 420.82 68.353)"
+                        d="M330.9-14.2h179.8v165.1H330.9z"
+                      />
+                    </defs>
+                    <clipPath id="SVGID_4_">
+                      <use xlink:href="#SVGID_3_" overflow="visible" />
+                    </clipPath>
+                    <g id="-2" class="st2">
+                      <ellipse
+                        transform="rotate(-37.001 420.46 67.88)"
+                        class="st0"
+                        cx="420.5"
+                        cy="67.9"
+                        rx="63"
+                        ry="51.8"
+                      />
+                      <defs>
+                        <ellipse
+                          id="SVGID_5_"
+                          transform="rotate(-37.001 420.46 67.88)"
+                          cx="420.5"
+                          cy="67.9"
+                          rx="63"
+                          ry="51.8"
+                        />
+                      </defs>
+                      <clipPath id="SVGID_6_">
+                        <use xlink:href="#SVGID_5_" overflow="visible" />
+                      </clipPath>
+                      <g class="st3">
+                        <path
+                          transform="rotate(-37 420.799 68.802)"
+                          class="st0"
+                          d="M357.8 17h125.9v103.7H357.8z"
+                        />
+                        <defs>
+                          <path
+                            id="SVGID_7_"
+                            transform="rotate(-37 420.799 68.802)"
+                            d="M357.8 17h125.9v103.7H357.8z"
+                          />
+                        </defs>
+                        <clipPath id="SVGID_8_">
+                          <use xlink:href="#SVGID_7_" overflow="visible" />
+                        </clipPath>
+                        <g class="st4">
+                          <ellipse
+                            transform="rotate(-37.001 420.46 67.88)"
+                            class="st5"
+                            cx="420.5"
+                            cy="67.9"
+                            rx="63"
+                            ry="51.8"
+                          />
+                        </g>
+                        <path
+                          transform="rotate(-37 420.799 68.802)"
+                          class="st6"
+                          d="M357.8 17h125.9v103.7H357.8z"
+                        />
+                        <ellipse
+                          transform="rotate(-37.001 420.46 67.88)"
+                          class="st7"
+                          cx="420.5"
+                          cy="67.9"
+                          rx="63"
+                          ry="51.8"
+                        />
+                        <path
+                          transform="rotate(-37 420.799 68.802)"
+                          class="st0"
+                          d="M357.8 17h125.9v103.7H357.8z"
+                        />
+                        <defs>
+                          <path
+                            id="SVGID_9_"
+                            transform="rotate(-37 420.799 68.802)"
+                            d="M357.8 17h125.9v103.7H357.8z"
+                          />
+                        </defs>
+                        <clipPath id="SVGID_10_">
+                          <use xlink:href="#SVGID_9_" overflow="visible" />
+                        </clipPath>
+                        <g class="st8">
+                          <ellipse
+                            transform="rotate(-37.001 420.46 67.88)"
+                            class="st5"
+                            cx="420.5"
+                            cy="67.9"
+                            rx="63"
+                            ry="51.8"
+                          />
+                        </g>
+                        <path
+                          transform="rotate(-37 420.799 68.802)"
+                          class="st9"
+                          d="M357.8 17h125.9v103.7H357.8z"
+                        />
+                        <path
+                          transform="rotate(-37.001 420.82 68.353)"
+                          class="st7"
+                          d="M330.9-14.2h179.8v165.1H330.9z"
+                        />
+                      </g>
+                      <ellipse
+                        transform="rotate(-37.001 420.46 67.88)"
+                        class="st7"
+                        cx="420.5"
+                        cy="67.9"
+                        rx="63"
+                        ry="51.8"
+                      />
+                      <path
+                        d="M392.4 61.3l10-7 12.3 17.5c2.1 2.8 3.7 5.8 4.9 9.1.7 2.5.5 5.2-.5 7.6-1.3 3-3.4 5.5-6.2 7.3-3.3 2.3-6.1 3.6-8.5 4-2.3.4-4.7 0-6.9-1-2.4-1.2-4.5-2.9-6.1-5.1l8.6-8c.7 1.1 1.6 2.1 2.6 2.9.7.5 1.5.8 2.4.8.7 0 1.4-.3 1.9-.7 1-.6 1.7-1.8 1.6-3-.3-1.7-1-3.4-2.1-4.7l-14-19.7zm30 11.1l9.1-7.2c1 1.2 2.3 2.1 3.7 2.6 2 .6 4.1.2 5.8-1.1 1.2-.8 2.2-1.9 2.6-3.3.6-1.8-.4-3.8-2.2-4.4-.3-.1-.6-.2-.9-.2-1.2-.1-3.3.4-6.4 1.7-5.1 2.1-9.1 2.9-12.1 2.6-2.9-.3-5.6-1.8-7.2-4.3-1.2-1.7-1.8-3.7-1.9-5.7 0-2.3.6-4.6 1.9-6.5 1.9-2.7 4.2-5 7-6.8 4.2-2.9 7.9-4.3 11.1-4.3 3.2 0 6.2 1.5 9 4.6l-9 7.1c-1.8-2.3-5.2-2.8-7.5-1l-.3.3c-1 .6-1.7 1.5-2.1 2.6-.3.8-.1 1.7.4 2.4.4.5 1 .9 1.7.9.8.1 2.2-.3 4.2-1.2 5-2.1 8.8-3.3 11.4-3.7 2.2-.4 4.5-.2 6.6.7 1.9.8 3.5 2.2 4.6 3.9 1.4 2 2.2 4.4 2.3 6.9.1 2.6-.6 5.1-2 7.3-1.8 2.7-4.1 5-6.8 6.8-5.5 3.8-10 5.4-13.6 4.8-3.9-.6-7.1-2.6-9.4-5.5z"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
