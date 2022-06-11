@@ -1,0 +1,11 @@
+.about {
+  max-width: 800px;
+
+  &__text {
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}

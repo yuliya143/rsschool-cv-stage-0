@@ -1,0 +1,18 @@
+:root {
+  --header-height: 80px;
+  --site-indent: 20px;
+  --inner-container: 1140px;
+
+  @include tablet {
+    --site-indent: 24px;
+  }
+
+  @include tablet-landscape {
+    --header-height: 100px;
+  }
+
+  --primary-font-family: 'Poppins', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen,
+    ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --secondary-font-family: 'Montserrat', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
+    oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
