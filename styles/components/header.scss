@@ -1,0 +1,39 @@
+.header {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: var(--header-height);
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--page-secondary-bg);
+  color: var(--primary-color);
+  font-family: var(--font-family);
+
+  &_scrolled {
+    box-shadow: 0 0 10px 0 rgba(0 0 0 / 10%);
+  }
+
+  @include tablet {
+    display: flex;
+    padding: 28px 0;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+
+    @include tablet {
+      padding-right: var(--content-indent);
+      padding-left: var(--content-indent);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.experience {
+  max-width: 800px;
+
+  &__item {
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__years {
+    font-weight: 600;
+    font-family: var(--secondary-font-family);
+  }
+}

@@ -1,0 +1,55 @@
+.contacts {
+  @include tablet-landscape {
+    border-bottom: 24px var(--page-secondary-bg);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    fill: var(--primary-color);
+  }
+
+  &__link {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--primary-font-family);
+    line-height: 1.6;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include only-desktop {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--primary-color);
+        opacity: 0.6;
+        transition: color 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+}
