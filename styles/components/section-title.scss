@@ -1,0 +1,30 @@
+.section-title {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 22px;
+  font-family: var(--secondary-font-family);
+  line-height: 1.3;
+  text-align: left;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin-top: 4px;
+    background: var(--primary-color);
+
+    @include tablet {
+      width: 54px;
+      height: 5px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 20px;
+    font-size: 36px;
+  }
+}
