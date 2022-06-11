@@ -1,10 +1,20 @@
 .footer {
-  background-color: rgb(66 127 233 / 60%);
+  padding-top: 20px;
+  padding-bottom: 16px;
+
+  @include tablet-landscape {
+    padding-bottom: 24px;
+  }
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tablet-landscape {
+      padding-right: 48px;
+      padding-left: 48px;
+    }
   }
 
   &__social-links {
@@ -13,8 +23,40 @@
     justify-content: center;
   }
 
-  &__icon {
-    width: 120px;
-    height: 60px;
+  &__link-item {
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+
+    @include tablet {
+      margin-left: 16px;
+    }
+
+    @include only-desktop {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__github-icon {
+    width: 28px;
+    height: 28px;
+
+    @include tablet {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__rsschool-icon {
+    width: 60px;
+    height: 28px;
+
+    @include tablet {
+      width: 80px;
+      height: 28px;
+    }
   }
 }

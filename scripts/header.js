@@ -1,19 +1,16 @@
 const menuButton = document.querySelector('.menu-button');
 const header = document.querySelector('.header');
-const siteNav = document.querySelector('.navigation');
-// const themeBox = document.querySelector('.theme-toggle');
 const navigation = document.querySelector('.navigation');
 
-const HEADER_HEIGHT = 74;
+const HEADER_HEIGHT = 80;
 
 function addNavMenuListener() {
   menuButton.addEventListener('click', handleNavMenuToggle);
 }
 
 function handleNavMenuToggle() {
-  siteNav.classList.toggle('navigation_opened');
+  navigation.classList.toggle('navigation_opened');
   menuButton.classList.toggle('menu-button_opened');
-  // themeBox.classList.toggle('theme-toggle_header');
 }
 
 function addScrollListener() {
@@ -59,7 +56,7 @@ function addResizeListener() {
 }
 
 function closeNavIfOpen() {
-  if (siteNav.classList.contains('navigation_opened')) {
+  if (navigation.classList.contains('navigation_opened')) {
     handleNavMenuToggle();
   }
 }

@@ -1,6 +1,6 @@
 .container {
   box-sizing: border-box;
-  max-width: 1440px;
+  max-width: var(--inner-container);
   margin-right: auto;
   margin-left: auto;
   padding-right: var(--site-indent);

@@ -1,12 +1,12 @@
 @import './abstracts/mixins';
 @import './abstracts/variables';
 
-@import './base/reset';
 @import './base/fonts';
+@import './base/reset';
 
-@import './themes/dark';
 @import './themes/light';
 
+@import './components/page';
 @import './components/header';
 @import './components/container';
 @import './components/navigation';
@@ -16,8 +16,11 @@
 @import './components/content';
 @import './components/promo';
 @import './components/contacts';
+@import './components/about';
+@import './components/skills';
+@import './components/languages';
+@import './components/experience';
+@import './components/education';
 @import './components/code';
 @import './components/projects';
 @import './components/footer';
-
-// @import './components/theme-toggle';

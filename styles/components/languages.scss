@@ -1,0 +1,31 @@
+.languages {
+  &__item {
+    position: relative;
+    padding-bottom: 8px;
+    padding-left: 20px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-family: var(--secondary-font-family);
+    text-transform: uppercase;
+  }
+
+  &__text::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+
+    @include tablet {
+      top: 10px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

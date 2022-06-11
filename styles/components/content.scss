@@ -1,9 +1,11 @@
 .content {
-  margin-top: var(--header-height);
+  padding-right: 0;
+  padding-left: 0;
 
   @include tablet-landscape {
     display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 24px 16px;
+    grid-template-columns: 40% 60%;
+    padding-right: var(--site-indent);
+    padding-left: var(--site-indent);
   }
 }

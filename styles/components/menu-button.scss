@@ -1,14 +1,10 @@
 .menu-button {
   all: unset;
-
-  $line-indent: 8px;
-  $button-size: 22px;
-
   position: relative;
   display: flex;
   align-items: center;
   align-self: flex-end;
-  width: $button-size;
+  width: 22px;
   height: 19px;
   padding: 18px;
   line-height: 0;
@@ -37,7 +33,7 @@
   &__line {
     position: relative;
     display: block;
-    width: $button-size;
+    width: 22px;
     height: 3px;
     background-color: var(--primary-color);
     transition: background-color 0.2s ease;
@@ -54,11 +50,11 @@
     }
 
     &::before {
-      top: -$line-indent;
+      top: 8px;
     }
 
     &::after {
-      top: $line-indent;
+      top: 8px;
     }
   }
 }
